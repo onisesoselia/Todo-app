@@ -1,0 +1,34 @@
+p {
+  margin: 0px 0px 2px 0px;
+}
+.yellow {
+  background: yellow;
+  color: black !important;
+}
+.yellow h6 {
+  color: black !important;
+}
+.yellow p {
+  color: black !important;
+}
+.green {
+  background: green;
+}
+.blue {
+  background: blue;
+}
+.card {
+  color: white !important;
+  margin-top: 5px;
+  cursor: move;
+  margin-top: 5px !important;
+}
+.text-muted {
+  color: white !important;
+}
+.card[_ngcontent-pbm-c50] {
+  color: none;
+}
+.card-body {
+  padding: 15px 15px 7px 15px !important;
+}

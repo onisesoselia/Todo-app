@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo Week Plan</title>
+  </head>
+  <body>
+    <section class="col-md-12 m-auto form-section">
+      <aside class="col-md-4 m-auto">
+        <app-form-filler
+          (onPlanSaveEmitter)="onPlanSaveSubs($event)"
+        ></app-form-filler>
+      </aside>
+    </section>
+    <section class="col-md-12 m-auto" class="render-section">
+      <aside class="col-md-12 m-auto">
+        <app-table-render [planTask]="planlist"></app-table-render>
+      </aside>
+    </section>
+  </body>
+</html>

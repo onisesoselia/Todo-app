@@ -1,0 +1,110 @@
+<article
+  class="d-flex flex-wrap justify-content-center article"
+  cdkDropListGroup
+>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Monday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.monday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.monday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Tuesday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.tuesday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.tuesday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Wednesday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.wednesday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.wednesday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Thursday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.thursday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.thursday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Friday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.friday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.friday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Saturday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.saturday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.saturday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item day-name">Sunday</li>
+    <li
+      class="list-group-item example-list"
+      cdkDropList
+      [cdkDropListData]="planTask.sunday"
+      (cdkDropListDropped)="drop($event)"
+    >
+      <app-table-card
+        *ngFor="let item of planTask.sunday"
+        [planItem]="item"
+        cdkDrag
+      ></app-table-card>
+    </li>
+  </ul>
+</article>
